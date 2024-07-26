@@ -28,6 +28,7 @@ import app.myzel394.numberhub.core.ui.common.textfield.addTokens
 import app.myzel394.numberhub.core.ui.common.textfield.deleteTokens
 import app.myzel394.numberhub.core.ui.common.textfield.getTextField
 import app.myzel394.numberhub.core.ui.common.textfield.placeCursorAtTheEnd
+import app.myzel394.numberhub.core.ui.common.textfield.smartDeleteTokens
 import app.myzel394.numberhub.data.common.format
 import app.myzel394.numberhub.data.common.isExpression
 import app.myzel394.numberhub.data.common.isGreaterThan
@@ -116,6 +117,15 @@ internal class CalculatorViewModel @Inject constructor(
             TextFieldValue()
         } else {
             input.value.deleteTokens()
+        }
+        updateInput(newValue)
+    }
+
+    fun smartDeleteTokens() {
+        val newValue = if (equalClicked.value) {
+            TextFieldValue()
+        } else {
+            input.value.smartDeleteTokens()
         }
         updateInput(newValue)
     }

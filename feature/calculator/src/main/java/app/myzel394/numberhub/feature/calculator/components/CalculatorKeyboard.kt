@@ -112,6 +112,7 @@ internal fun CalculatorKeyboard(
     onAddTokenClick: (String) -> Unit,
     onBracketsClick: () -> Unit,
     onDeleteClick: () -> Unit,
+    onSmartDeleteClick: () -> Unit,
     onClearClick: () -> Unit,
     onEqualClick: () -> Unit,
     radianMode: Boolean,
@@ -130,6 +131,7 @@ internal fun CalculatorKeyboard(
             onAddTokenClick = onAddTokenClick,
             onBracketsClick = onBracketsClick,
             onDeleteClick = onDeleteClick,
+            onSmartDeleteClick = onSmartDeleteClick,
             onClearClick = onClearClick,
             onEqualClick = onEqualClick,
             radianMode = radianMode,
@@ -146,6 +148,7 @@ internal fun CalculatorKeyboard(
             onAddTokenClick = onAddTokenClick,
             onBracketsClick = onBracketsClick,
             onDeleteClick = onDeleteClick,
+            onSmartDeleteClick = onSmartDeleteClick,
             onClearClick = onClearClick,
             onEqualClick = onEqualClick,
             radianMode = radianMode,
@@ -167,6 +170,7 @@ private fun PortraitKeyboard(
     onAddTokenClick: (String) -> Unit,
     onBracketsClick: () -> Unit,
     onDeleteClick: () -> Unit,
+    onSmartDeleteClick: () -> Unit,
     onClearClick: () -> Unit,
     onEqualClick: () -> Unit,
     radianMode: Boolean,
@@ -318,7 +322,13 @@ private fun PortraitKeyboard(
                 KeyboardButtonLight(mainButtonModifier, IconPack.Key0, Token.Digit._0, KeyboardButtonToken.CONTENT_HEIGHT_TALL) { onAddTokenClick(Token.Digit._0) }
                 KeyboardButtonLight(mainButtonModifier, fractionalIcon, stringResource(fractionalIconDescription), KeyboardButtonToken.CONTENT_HEIGHT_TALL) { onAddTokenClick(Token.Digit.dot) }
             }
-            KeyboardButtonLight(mainButtonModifier, IconPack.Backspace, stringResource(R.string.delete_label), KeyboardButtonToken.CONTENT_HEIGHT_TALL, onClearClick) { onDeleteClick() }
+            KeyboardButtonLight(
+                mainButtonModifier,
+                IconPack.Backspace,
+                stringResource(R.string.delete_label),
+                KeyboardButtonToken.CONTENT_HEIGHT_TALL,
+                onSmartDeleteClick,
+            ) { onDeleteClick() }
             KeyboardButtonFilled(mainButtonModifier, IconPack.Equal, stringResource(R.string.keyboard_equal), KeyboardButtonToken.CONTENT_HEIGHT_TALL) { onEqualClick() }
         }
 
@@ -400,6 +410,7 @@ private fun LandscapeKeyboard(
     onAddTokenClick: (String) -> Unit,
     onBracketsClick: () -> Unit,
     onDeleteClick: () -> Unit,
+    onSmartDeleteClick: () -> Unit,
     onClearClick: () -> Unit,
     onEqualClick: () -> Unit,
     radianMode: Boolean,
@@ -473,7 +484,13 @@ private fun LandscapeKeyboard(
                     KeyboardButtonLight(buttonModifier, IconPack.Key0, Token.Digit._0, KeyboardButtonToken.CONTENT_HEIGHT_SHORT) { onAddTokenClick(Token.Digit._0) }
                     KeyboardButtonLight(buttonModifier, fractionalIcon, stringResource(fractionalIconDescription), KeyboardButtonToken.CONTENT_HEIGHT_SHORT) { onAddTokenClick(Token.Digit.dot) }
                 }
-                KeyboardButtonLight(buttonModifier, IconPack.Backspace, stringResource(R.string.delete_label), KeyboardButtonToken.CONTENT_HEIGHT_SHORT, onClearClick) { onDeleteClick() }
+                KeyboardButtonLight(
+                    buttonModifier,
+                    IconPack.Backspace,
+                    stringResource(R.string.delete_label),
+                    KeyboardButtonToken.CONTENT_HEIGHT_SHORT,
+                    onSmartDeleteClick,
+                ) { onDeleteClick() }
                 KeyboardButtonFilled(buttonModifier, IconPack.Plus, stringResource(R.string.keyboard_plus), KeyboardButtonToken.CONTENT_HEIGHT_SHORT) { onAddTokenClick(Token.Operator.plus) }
                 KeyboardButtonFilled(buttonModifier, IconPack.Equal, stringResource(R.string.keyboard_equal), KeyboardButtonToken.CONTENT_HEIGHT_SHORT) { onEqualClick() }
             }
@@ -545,6 +562,7 @@ private fun PreviewPortraitKeyboard() {
         onAddTokenClick = {},
         onBracketsClick = {},
         onDeleteClick = {},
+        onSmartDeleteClick = {},
         onClearClick = {},
         onEqualClick = {},
         radianMode = true,
@@ -567,6 +585,7 @@ private fun PreviewLandscapeKeyboard() {
         onAddTokenClick = {},
         onBracketsClick = {},
         onDeleteClick = {},
+        onSmartDeleteClick = {},
         onClearClick = {},
         onEqualClick = {},
         radianMode = true,

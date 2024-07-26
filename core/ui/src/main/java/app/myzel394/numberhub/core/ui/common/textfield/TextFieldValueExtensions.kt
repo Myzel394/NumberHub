@@ -127,6 +127,15 @@ fun TextFieldValue.deleteTokens(): TextFieldValue {
     )
 }
 
+fun TextFieldValue.smartDeleteTokens(): TextFieldValue {
+    val deleteRange = SmartDeleteHandler(text, selection).calculateDeleteRange()
+
+    return this.copy(
+        text = text.removeRange(deleteRange.start, deleteRange.end),
+        selection = TextRange(deleteRange.start),
+    )
+}
+
 fun TextFieldValue.placeCursorAtTheEnd(): TextFieldValue = copy(selection = TextRange(text.length))
 
 /**

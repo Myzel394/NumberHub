@@ -78,6 +78,10 @@ object Token {
                 power, factorial, modulo, percent, sqrt,
             )
         }
+
+        val allWithoutBrackets by lazy {
+            all.filter { it !in listOf(leftBracket, rightBracket) }
+        }
     }
 
     object Func {
