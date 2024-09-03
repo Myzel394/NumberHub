@@ -95,6 +95,7 @@ internal fun CalculatorRoute(
             onAddTokenClick = viewModel::addTokens,
             onBracketsClick = viewModel::addBracket,
             onDeleteClick = viewModel::deleteTokens,
+            onSmartDeleteClick = viewModel::smartDeleteTokens,
             onClearClick = viewModel::clearInput,
             onEqualClick = viewModel::equal,
             onRadianModeClick = viewModel::updateRadianMode,
@@ -114,6 +115,7 @@ internal fun Ready(
     onAddTokenClick: (String) -> Unit,
     onBracketsClick: () -> Unit,
     onDeleteClick: () -> Unit,
+    onSmartDeleteClick: () -> Unit,
     onClearClick: () -> Unit,
     onEqualClick: () -> Unit,
     onRadianModeClick: (Boolean) -> Unit,
@@ -250,6 +252,7 @@ internal fun Ready(
                 onAddTokenClick = onAddTokenClick,
                 onBracketsClick = onBracketsClick,
                 onDeleteClick = onDeleteClick,
+                onSmartDeleteClick = onSmartDeleteClick,
                 onClearClick = onClearClick,
                 onEqualClick = {
                     focusManager.clearFocus()
@@ -349,6 +352,7 @@ private fun PreviewCalculatorScreen() {
         onAddTokenClick = {},
         onBracketsClick = {},
         onDeleteClick = {},
+        onSmartDeleteClick = {},
         onClearClick = {},
         onEqualClick = {},
         onRadianModeClick = {},
