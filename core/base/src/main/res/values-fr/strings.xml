@@ -18,9 +18,31 @@
   -->
 
 <resources>
+
+    <!-- Person's height -->
+    <string name="body_mass_height">Taille</string>
+    <string name="body_mass_imperial">Impérial</string>
+    <string name="body_mass_metric">Métrique</string>
+    <string name="body_mass_normal">Poids normal</string>
+
+    <!-- Will be a text followed by a number like so: "Normal weight for your height - 60" -->
+    <!-- https://fr.wikipedia.org/wiki/Obésité for the terms used to qualify obese class-->
+    <string name="body_mass_normal_weight">Poids normal pour votre taille</string>
+    <string name="body_mass_obese_1">Obésité</string>
+    <string name="body_mass_obese_2">Obésité sévère</string>
+    <string name="body_mass_obese_3">Obésité morbide</string>
+    <string name="body_mass_overweight">En surpoids</string>
+
+    <!-- Also known as Body mass index (BMI) -->
+    <!-- Body Mass should be "Masse Corporelle" but is referred as "IMC" in France, which is commonly used and short for "Indice de Masse Corporelle"-->
+    <string name="body_mass_title">IMC</string>
+    <string name="body_mass_underweight">En sous-poids</string>
+    
+    <!-- Person's weight -->
+    <string name="body_mass_weight">Poids</string>
     <string name="calculator_clear_history_support">Toutes les expressions de l\'historique seront supprimées pour toujours. Cette action ne peux pas être annulée !</string>
     <string name="calculator_divide_by_zero_error">Impossible de diviser par 0</string>
-    <string name="calculator_no_history">Pas d\'historique</string>
+    <string name="calculator_no_history">Aucun historique</string>
     <string name="calculator_title">Calculatrice</string>
     <string name="cancel_label">Annuler</string>
     <string name="checked_filter_description">Filtre vérifié</string>
@@ -36,7 +58,7 @@
     <string name="converter_search_bar_placeholder">Rechercher des unités</string>
     <string name="converter_swap_units_description">Échanger les unités</string>
     <string name="copied_label">%1$s! copié</string>
-    <string name="date_calculator_add">Ajouter</string>
+    <string name="date_calculator_add">Ajouter </string>
 
     <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/33QTn2NVrjJT772cBDFRqSMH.png -->
     <string name="date_calculator_days">Jours</string>
@@ -52,7 +74,7 @@
     <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/33QTn2NVrjJT772cBDFRqSMH.png -->
     <string name="date_calculator_months">Mois</string>
     <string name="date_calculator_start">Début</string>
-    <string name="date_calculator_subtract">Soustraire</string>
+    <string name="date_calculator_subtract"> Soustraire</string>
     <string name="date_calculator_title">Calculateur de date</string>
 
     <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/33QTn2NVrjJT772cBDFRqSMH.png -->
@@ -65,9 +87,7 @@
     <string name="loading_label">Chargement…</string>
     <string name="navigate_up_description">Naviguer vers le haut</string>
 
-    <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/9lSfdkfKShwyQFEF4nvbVaIb.jpg 
-
-Used in this dialog window. Should be short -->
+    <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/9lSfdkfKShwyQFEF4nvbVaIb.jpg Used in this dialog window. Should be short -->
     <string name="next_label">Suite</string>
     <string name="no_results_description">Résultat de recherche vide</string>
     <string name="no_results_label">Aucun résultat trouvé</string>
@@ -80,26 +100,28 @@ Used in this dialog window. Should be short -->
     <string name="select_time_label">Choisir le temps</string>
     <string name="settings_about_unitto">À propos de NumberHub</string>
     <string name="settings_about_unitto_support">En savoir plus sur l\'application</string>
-    <string name="settings_additional">Supplémentaires</string>
-    <string name="settings_amoled_dark">AMOLED Noir</string>
+    <string name="settings_additional">Paramètres supplémentaires</string>
+    <string name="settings_amoled_dark">Interface AMOLED</string>
     <string name="settings_amoled_dark_support">Utiliser un fond noir pour les thèmes sombres</string>
     <string name="settings_auto">Auto</string>
+    <string name="settings_back_up">Sauvegarde</string>
     <string name="settings_calculator_support">Vue historique</string>
     <string name="settings_clear_cache">Effacer le cache</string>
     <string name="settings_color_scheme">Palette de couleurs</string>
-    <string name="settings_color_theme">Couleurs du thème</string>
+    <string name="settings_color_theme">Thème de couleurs</string>
     <string name="settings_color_theme_support">Choisir un mode de thème</string>
     <string name="settings_converter_support">Groupes d\'unités, tri, formatage</string>
     <string name="settings_currency_rates_note_text">Les taux de change sont mis à jour quotidiennement. L\'application ne permet pas de suivre le marché en temps réel.</string>
     <string name="settings_currency_rates_note_title">Taux de conversion faux ?</string>
     <string name="settings_dark_mode">Sombre</string>
+    <string name="settings_decimal_separator">Séparateur de décimales</string>
     <string name="settings_disable_unit_group_description">Désactiver le groupe d\'unités</string>
     <string name="settings_display">Affichage</string>
-    <string name="settings_display_support">Apparence de l\'Application</string>
+    <string name="settings_display_support">Apparence de l\'application</string>
     <string name="settings_dynamic_colors">Couleurs dynamiques</string>
     <string name="settings_dynamic_colors_support">Utilisez les couleurs de votre fond d\'écran</string>
     <string name="settings_enable_unit_group_description">Activer le groupe d\'unités</string>
-    <string name="settings_exponential_notation">Notation exponentielle</string>
+    <string name="settings_exponential_notation">Notation scientifique</string>
     <string name="settings_exponential_notation_support">Remplacer une partie du nombre par E</string>
     <string name="settings_format_time">Formater l\'heure</string>
     <string name="settings_format_time_support">Exemple : Afficher 130 minutes comme 2h 10m</string>
@@ -112,8 +134,9 @@ https://s3.eu-west-1.amazonaws.com/po-pub/i/prtM85P6x1fMuLg1I0zbkceo.png
 Maybe this can be labeled better? Let me know. It should be something that can describe content of the Formatting screen. -->
     <string name="settings_formatting_support">Précision et format des nombres</string>
     <string name="settings_language">Langue</string>
+    <string name="settings_language_support">Changer la langue de l\'app</string>
     <string name="settings_light_mode">Clair</string>
-    <string name="settings_middle_zero">Zéro au milieu</string>
+    <string name="settings_middle_zero">Zéro central</string>
     <string name="settings_middle_zero_support">Intervertir les boutons zéro et décimal</string>
     <string name="settings_note">Note</string>
     <string name="settings_partial_history_view">Vue partielle de l\'historique</string>
@@ -124,8 +147,9 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <string name="settings_precision_max">%1$s (Max)</string>
     <string name="settings_precision_support">Nombre de décimales</string>
     <string name="settings_privacy_policy">Politique de confidentialité</string>
-    <string name="settings_rate_this_app">Évaluer l\'application</string>
+    <string name="settings_rate_this_app">Noter l\'application</string>
     <string name="settings_reorder_unit_group_description">Réorganiser le groupe d\'unités</string>
+    <string name="settings_restore">Restaurer</string>
     <string name="settings_selected_color">Couleur sélectionnée</string>
     <string name="settings_selected_style">Style sélectionné</string>
     <string name="settings_separator">Séparateur</string>
@@ -141,8 +165,13 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/r1VikAn70eXQP4da2hrntTGQ.jpg -->
     <!-- Option name to use system default setting -->
     <string name="settings_system">Système</string>
+    <string name="settings_system_font">Police</string>
+    <string name="settings_system_font_support">Afficher avec la police système</string>
+    <string name="settings_ac_button">bouton AC</string>
+    <string name="settings_ac_button_support">Afficher le bouton de suppression</string>
     <string name="settings_terms_and_conditions">Termes et conditions</string>
     <string name="settings_third_party_licenses">Licences tierces</string>
+    <string name="settings_thousands_separator">Séparateur de milliers</string>
     <string name="settings_title">Paramètres</string>
     <string name="settings_translate_app">Traduire cette app</string>
     <string name="settings_translate_app_support">Rejoignez le projet POEditor pour aider</string>
@@ -152,9 +181,17 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <string name="settings_units_sorting_support">Changer l\'ordre des unités</string>
     <string name="settings_version_name">Nom de la version</string>
     <string name="settings_vibrations">Vibrations</string>
-    <string name="settings_vibrations_support">Retour haptique lors du click sur les boutons du clavier</string>
+    <string name="settings_vibrations_support">Retour haptique lors du clic sur les boutons du clavier</string>
     <string name="settings_view_source_code">Voir le code source</string>
     <string name="time_zone_add_title">Ajouter un fuseau horaire</string>
+    
+    <string name="time_zone_no_results_button">Lire l\'article</string>
+    
+    <!-- NumberHub beta text-->
+    <string name="settings_numberhub_newApp">Unitto est maintenant NumberHub !</string>
+    <string name="settings_numberhub_newApp_message">Unitto n\'est plus maintenu. Vous êtes l\'un des premiers utilisateurs à essayer NumberHub ! Veuillez faire passer le mot et partager l\'application avec vos amis. Merci pour votre soutien !</string>
+    <string name="settings_numberhub_newApp_announcement">NumberHub sert de remplacement direct pour Unitto. Il a les mêmes fonctionnalités et plus encore. NumberHub est encore en version bêta et des changements peuvent survenir. Veuillez signaler tout problème que vous rencontrez. Merci d\'être l\'un des premiers à l\'essayer !</string>
+    
     <string name="time_zone_title">Fuseaux horaires</string>
     <string name="tomorrow">Demain</string>
     <string name="unit_acre">Acre</string>
