@@ -18,6 +18,28 @@
   -->
 
 <resources>
+
+    <!-- Person's height -->
+    <string name="body_mass_height">Taille</string>
+    <string name="body_mass_imperial">Impérial</string>
+    <string name="body_mass_metric">Métrique</string>
+    <string name="body_mass_normal">Poids normal</string>
+
+    <!-- Will be a text followed by a number like so: "Normal weight for your height - 60" -->
+    <!-- https://fr.wikipedia.org/wiki/Obésité for the terms used to qualify obese class-->
+    <string name="body_mass_normal_weight">Poids normal pour votre taille</string>
+    <string name="body_mass_obese_1">Obésité</string>
+    <string name="body_mass_obese_2">Obésité sévère</string>
+    <string name="body_mass_obese_3">Obésité morbide</string>
+    <string name="body_mass_overweight">En sur-poids</string>
+
+    <!-- Also known as Body mass index (BMI) -->
+    <!-- Body Mass should be "Masse Corporelle" but is referred as "IMC" in France, which is commonly used and short for "Indice de Masse Corporelle"-->
+    <string name="body_mass_title">IMC</string>
+    <string name="body_mass_underweight">En sous-poids</string>
+    
+    <!-- Person's weight -->
+    <string name="body_mass_weight">Poids</string>
     <string name="calculator_clear_history_support">Toutes les expressions de l\'historique seront supprimées pour toujours. Cette action ne peux pas être annulée !</string>
     <string name="calculator_divide_by_zero_error">Impossible de diviser par 0</string>
     <string name="calculator_no_history">Pas d\'historique</string>
@@ -84,6 +106,7 @@ Used in this dialog window. Should be short -->
     <string name="settings_amoled_dark">AMOLED Noir</string>
     <string name="settings_amoled_dark_support">Utiliser un fond noir pour les thèmes sombres</string>
     <string name="settings_auto">Auto</string>
+    <string name="settings_back_up">Sauvegarde</string>
     <string name="settings_calculator_support">Vue historique</string>
     <string name="settings_clear_cache">Effacer le cache</string>
     <string name="settings_color_scheme">Palette de couleurs</string>
@@ -93,6 +116,7 @@ Used in this dialog window. Should be short -->
     <string name="settings_currency_rates_note_text">Les taux de change sont mis à jour quotidiennement. L\'application ne permet pas de suivre le marché en temps réel.</string>
     <string name="settings_currency_rates_note_title">Taux de conversion faux ?</string>
     <string name="settings_dark_mode">Sombre</string>
+    <string name="settings_decimal_separator">Séparateur de décimales</string>
     <string name="settings_disable_unit_group_description">Désactiver le groupe d\'unités</string>
     <string name="settings_display">Affichage</string>
     <string name="settings_display_support">Apparence de l\'Application</string>
@@ -112,6 +136,7 @@ https://s3.eu-west-1.amazonaws.com/po-pub/i/prtM85P6x1fMuLg1I0zbkceo.png
 Maybe this can be labeled better? Let me know. It should be something that can describe content of the Formatting screen. -->
     <string name="settings_formatting_support">Précision et format des nombres</string>
     <string name="settings_language">Langue</string>
+    <string name="settings_language_support">Changer la langue de l'app</string>
     <string name="settings_light_mode">Clair</string>
     <string name="settings_middle_zero">Zéro au milieu</string>
     <string name="settings_middle_zero_support">Intervertir les boutons zéro et décimal</string>
@@ -126,6 +151,7 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <string name="settings_privacy_policy">Politique de confidentialité</string>
     <string name="settings_rate_this_app">Évaluer l\'application</string>
     <string name="settings_reorder_unit_group_description">Réorganiser le groupe d\'unités</string>
+    <string name="settings_restore">Restaurer</string>
     <string name="settings_selected_color">Couleur sélectionnée</string>
     <string name="settings_selected_style">Style sélectionné</string>
     <string name="settings_separator">Séparateur</string>
@@ -141,8 +167,13 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <!-- https://s3.eu-west-1.amazonaws.com/po-pub/i/r1VikAn70eXQP4da2hrntTGQ.jpg -->
     <!-- Option name to use system default setting -->
     <string name="settings_system">Système</string>
+    <string name="settings_system_font">Police</string>
+    <string name="settings_system_font_support">Afficher avec la police système</string>
+    <string name="settings_ac_button">bouton AC</string>
+    <string name="settings_ac_button_support">Afficher le bouton de suppression</string>
     <string name="settings_terms_and_conditions">Termes et conditions</string>
     <string name="settings_third_party_licenses">Licences tierces</string>
+    <string name="settings_thousands_separator">Séparateur de Milliers</string>
     <string name="settings_title">Paramètres</string>
     <string name="settings_translate_app">Traduire cette app</string>
     <string name="settings_translate_app_support">Rejoignez le projet POEditor pour aider</string>
@@ -155,6 +186,12 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <string name="settings_vibrations_support">Retour haptique lors du click sur les boutons du clavier</string>
     <string name="settings_view_source_code">Voir le code source</string>
     <string name="time_zone_add_title">Ajouter un fuseau horaire</string>
+    
+    <!-- NumberHub beta text-->
+    <string name="settings_numberhub_newApp">Unitto est maintenant NumberHub !</string>
+    <string name="settings_numberhub_newApp_message">Unitto n'est plus maintenu. Vous êtes l'un des premiers utilisateurs à essayer NumberHub ! Veuillez faire passer le mot et partager l'application avec vos amis. Merci pour votre soutien !</string>
+    <string name="settings_numberhub_newApp_announcement">NumberHub sert de remplacement direct pour Unitto. Il a les mêmes fonctionnalités et plus encore. NumberHub est encore en version bêta et des changements peuvent survenir. Veuillez signaler tout problème que vous rencontrez. Merci d'être l'un des premiers à l'essayer !</string>
+    
     <string name="time_zone_title">Fuseaux horaires</string>
     <string name="tomorrow">Demain</string>
     <string name="unit_acre">Acre</string>
@@ -227,6 +264,7 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <string name="unit_centipascal">Centipascal</string>
     <string name="unit_centipascal_short">cPa</string>
     <string name="unit_converter_title">Convertisseur d\'unités</string>
+    <string name="body_mass_title">Masse Corporelle</string>
     <string name="unit_cosmic_velocity_first">Vitesse de satellisation minimale</string>
     <string name="unit_cosmic_velocity_second">Vitesse de libération</string>
     <string name="unit_cosmic_velocity_third">Vitesse de libération du système</string>
