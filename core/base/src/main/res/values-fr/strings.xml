@@ -264,7 +264,6 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     <string name="unit_centipascal">Centipascal</string>
     <string name="unit_centipascal_short">cPa</string>
     <string name="unit_converter_title">Convertisseur d\'unités</string>
-    <string name="body_mass_title">Masse Corporelle</string>
     <string name="unit_cosmic_velocity_first">Vitesse de satellisation minimale</string>
     <string name="unit_cosmic_velocity_second">Vitesse de libération</string>
     <string name="unit_cosmic_velocity_third">Vitesse de libération du système</string>
