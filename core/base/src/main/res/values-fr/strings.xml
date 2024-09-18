@@ -123,7 +123,7 @@
     <string name="settings_enable_unit_group_description">Activer le groupe d\'unités</string>
     <string name="settings_exponential_notation">Notation scientifique</string>
     <string name="settings_exponential_notation_support">Remplacer une partie du nombre par E</string>
-    <string name="settings_format_time">Formater l'heure</string>
+    <string name="settings_format_time">Formater l\'heure</string>
     <string name="settings_format_time_support">Exemple : Afficher 130 minutes comme 2h 10m</string>
     <string name="settings_formatting">Formatage</string>
     <string name="settings_formatting_preview">Aperçu (cliquez pour changer)</string>
@@ -134,7 +134,7 @@ https://s3.eu-west-1.amazonaws.com/po-pub/i/prtM85P6x1fMuLg1I0zbkceo.png
 Maybe this can be labeled better? Let me know. It should be something that can describe content of the Formatting screen. -->
     <string name="settings_formatting_support">Précision et format des nombres</string>
     <string name="settings_language">Langue</string>
-    <string name="settings_language_support">Changer la langue de l'app</string>
+    <string name="settings_language_support">Changer la langue de l\'app</string>
     <string name="settings_light_mode">Clair</string>
     <string name="settings_middle_zero">Zéro central</string>
     <string name="settings_middle_zero_support">Intervertir les boutons zéro et décimal</string>
@@ -189,8 +189,8 @@ Maybe this can be labeled better? Let me know. It should be something that can d
     
     <!-- NumberHub beta text-->
     <string name="settings_numberhub_newApp">Unitto est maintenant NumberHub !</string>
-    <string name="settings_numberhub_newApp_message">Unitto n'est plus maintenu. Vous êtes l'un des premiers utilisateurs à essayer NumberHub ! Veuillez faire passer le mot et partager l'application avec vos amis. Merci pour votre soutien !</string>
-    <string name="settings_numberhub_newApp_announcement">NumberHub sert de remplacement direct pour Unitto. Il a les mêmes fonctionnalités et plus encore. NumberHub est encore en version bêta et des changements peuvent survenir. Veuillez signaler tout problème que vous rencontrez. Merci d'être l'un des premiers à l'essayer !</string>
+    <string name="settings_numberhub_newApp_message">Unitto n\'est plus maintenu. Vous êtes l\'un des premiers utilisateurs à essayer NumberHub ! Veuillez faire passer le mot et partager l\'application avec vos amis. Merci pour votre soutien !</string>
+    <string name="settings_numberhub_newApp_announcement">NumberHub sert de remplacement direct pour Unitto. Il a les mêmes fonctionnalités et plus encore. NumberHub est encore en version bêta et des changements peuvent survenir. Veuillez signaler tout problème que vous rencontrez. Merci d\'être l\'un des premiers à l\'essayer !</string>
     
     <string name="time_zone_title">Fuseaux horaires</string>
     <string name="tomorrow">Demain</string>
