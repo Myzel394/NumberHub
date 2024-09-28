@@ -60,7 +60,7 @@ fun DatePickerDialog(
     onConfirm: (ZonedDateTime) -> Unit,
 ) {
     val pickerState = rememberDatePickerState(
-        initialSelectedDateMillis = localDateTime.toEpochSecond() * 1000,
+        initialSelectedDateMillis = localDateTime.withZoneSameLocal(ZoneId.of("Z")).toEpochSecond() * 1000,
         yearRange = 0..9999,
     )
 
@@ -100,7 +100,7 @@ fun DatePickerDialog(
 
                                 val date = LocalDateTime.ofInstant(
                                     Instant.ofEpochMilli(millis),
-                                    ZoneId.systemDefault(),
+                                    ZoneId.of("Z"),
                                 )
 
                                 onConfirm(
