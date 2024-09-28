@@ -112,7 +112,7 @@ internal fun ZonedDateTime.minus(
     )
 }
 
-private val yearInSeconds by lazy { BigDecimal("31104000") }
+private val yearInSeconds by lazy { BigDecimal("31536000") }
 private val monthsInSeconds by lazy { BigDecimal("2592000") }
 private val dayInSeconds by lazy { BigDecimal("86400") }
 private val hourInSeconds by lazy { BigDecimal("3600") }
